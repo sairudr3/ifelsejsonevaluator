@@ -1,0 +1,33 @@
+{
+	"type": "if",
+	"conditions": [
+		{
+			"conditionType": "==",
+			"left": "a",
+			"right": "abc"
+		},
+		{
+			"conditionType": ">",
+			"left": "b",
+			"right": "4"
+		}
+	],
+	"elseStatement": {
+		"type": "if",
+		"conditions": [
+			{
+				"conditionType": "<",
+				"left": "b",
+				"right": "10"
+			}
+		],
+		"elseStatement": {
+			"type": null,
+			"conditions": null,
+			"elseStatement": null,
+			"thenResult": "false"
+		},
+		"thenResult": "true"
+	},
+	"thenResult": "true"
+}
